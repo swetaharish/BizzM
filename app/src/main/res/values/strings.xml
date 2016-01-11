@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">BizzM</string>
+
+    <string name="splashTxt">SPLASH</string>
+
+    <string name="action_productExpiring">Products Expiring</string>
+    <string name="action_leads">Leads</string>
+    <string name="action_deals">Deals</string>
+    <string name="action_review">Reviews</string>
+    <string name="action_chat">Chat</string>
+
+    <string name="title_activity_device_register">DeviceRegisterActivity</string>
+
+
+    <string name="title_activity_home">BizzMandi</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="leadstext">Check to turn on leads notification</string>
+
+
+    <string-array name="leftmenu">
+        <item>Sell</item>
+        <item>Nearby deals</item>
+        <item>Buy</item>
+        <item>Search</item>
+        <item>Followers</item>
+        <item>Profile</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

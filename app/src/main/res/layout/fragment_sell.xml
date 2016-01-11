@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2DFDB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".4"
+            android:minHeight="300dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/productViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight=".6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Submit by :"
+                    android:textColor="#0091EA"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/userType"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight=".5"
+                    android:entries="@array/productSupplier"
+                    android:prompt="@string/supplier_prompt" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Product name"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/modelNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Model number"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Company name"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/productUnits"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Units"
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Category :"
+                    android:textColor="#0091EA"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/shopCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:hint="Category"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/unitPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:hint="Unit price"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/netPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:hint="Net price"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Available date :"
+                    android:textColor="#0091EA"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/availableDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:hint="Date"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <!--<RadioGroup
+                android:id="@+id/buySell"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageView"
+                android:orientation="horizontal"
+                android:weightSum=".9"
+                >
+                <RadioButton
+                    android:id="@+id/sell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.5"
+                    android:checked="false"
+                    android:text="Sell" />
+
+                <RadioButton
+                    android:id="@+id/buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.5"
+                    android:checked="false"
+                    android:text="Buy"
+                    />
+
+
+            </RadioGroup>-->
+
+            <EditText
+                android:id="@+id/productSpecification"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:hint="Product specification" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/latitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="Latitude"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/longitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="Longitude"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Nearby distance"
+                android:textStyle="bold" />
+
+
+            <SeekBar
+                android:id="@+id/nearbydistance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:max="100" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="Product condtion"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/productCondition"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/imageView"
+                android:orientation="horizontal"
+                android:weightSum=".9">
+
+                <RadioButton
+                    android:id="@+id/conditionNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.3"
+                    android:checked="false"
+                    android:text="New" />
+
+                <RadioButton
+                    android:id="@+id/conditionOld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:checked="false"
+                    android:text="Old" />
+
+                <RadioButton
+                    android:id="@+id/conditionReurnished"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.3"
+                    android:checked="false"
+                    android:text="Re-furnish" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Valid till date :"
+                    android:textColor="#0091EA"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/validDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:hint="Date"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitProduct"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#0091EA"
+                android:text="Sell"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
