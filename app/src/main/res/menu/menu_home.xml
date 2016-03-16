@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="bizzmandi.com.bizzm.activities.HomeActivity">
+
+    <item android:id="@+id/action_productExpiring" android:title="@string/action_productExpiring"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_leads" android:title="@string/action_leads"
+        android:orderInCategory="101" app:showAsAction="never" />
+    <item android:id="@+id/action_deals" android:title="@string/action_deals"
+        android:orderInCategory="102" app:showAsAction="never" />
+    <item android:id="@+id/action_review" android:title="@string/action_review"
+        android:orderInCategory="103" app:showAsAction="never" />
+    <item android:id="@+id/action_chat" android:title="@string/action_chat"
+        android:orderInCategory="104" app:showAsAction="never" />
+</menu>

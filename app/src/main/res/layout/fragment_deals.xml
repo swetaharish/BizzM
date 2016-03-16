@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2DFDB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".4"
+            android:minHeight="300dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/productViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight=".6"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Phone Number"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/productType"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Product Type"
+                android:singleLine="true" />
+
+
+            <EditText
+                android:id="@+id/productModel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Model"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Company name"
+                android:singleLine="true" />
+
+
+
+                <TextView
+                    android:id="@+id/shopCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Category"
+                    android:textColor="#0091EA"
+                    android:textStyle="bold" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/totalPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:hint="Total price"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/discountPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:hint="Discount price"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+            <EditText
+                android:id="@+id/discountPercent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:hint="Discount %"
+                android:singleLine="true" />
+                <EditText
+                    android:id="@+id/netPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:hint="NetPrice to user"
+                    android:singleLine="true" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Valid till :"
+                    android:textColor="#0091EA"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/availableDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:hint="Date"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/limitedStock"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Limited Stock"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="#0091EA"
+                android:textStyle="bold"
+                />
+
+
+
+            <EditText
+                android:id="@+id/dealDescription"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:hint="Deal specification" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/latitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="Latitude"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/longitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:hint="Longitude"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/submitDeal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#0091EA"
+                android:text="Post a deal"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/categoryHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#ff0000">
+        <TextView
+            android:id="@+id/category_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="BACK"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/categoryContainer"
+        android:layout_below="@id/categoryHeader"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#00ff00">
+        <ListView
+            android:id="@+id/categoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/categoryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+       android:layout_alignParentBottom="true"
+        android:background="#0000ff">
+        <TextView
+            android:id="@+id/category_done"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Add"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
